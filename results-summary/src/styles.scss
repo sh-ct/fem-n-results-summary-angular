@@ -24,3 +24,13 @@ body {
   font-size: var(--fs-400);
   color: var(--clr-dark-blue);
 }
+
+/* Only for this project as it is not a part of a larger project */
+@media (min-width: 600px) {
+  /* Aligns the content centre for desktop screens */
+  body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+}
