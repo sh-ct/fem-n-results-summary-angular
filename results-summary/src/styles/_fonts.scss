@@ -1,0 +1,23 @@
+:root {
+  --font-family-default: 'HankenGrotesk', sans-serif;
+
+  --fw-regular: 500;
+  --fw-bold: 700;
+  --fw-extra-bold: 800;
+
+  --fs-400: 1.125rem;
+  --fs-500: 1.25rem;
+  --fs-600: 1.5rem;
+  --fs-700: 1.75rem;
+  --fs-800: 2rem;
+  --fs-900: 5rem;
+}
+
+/* HankenGrotesk */
+@font-face {
+  font-family: 'HankenGrotesk';
+  font-display: swap;
+  font-weight: 100 900;
+  src: url('../assets/fonts/HankenGrotesk-VariableFont_wght.ttf') 
+       format('truetype');
+}

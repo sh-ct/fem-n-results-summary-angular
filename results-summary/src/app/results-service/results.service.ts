@@ -11,7 +11,7 @@ export class ResultsService {
   constructor() { }
 
   getResults() {
-    return this.results;
+    return Array.from(jsonData);
   }
 
 }

@@ -1,0 +1,56 @@
+@use '../../mixins' as *;
+
+.flex-group {
+    @include flex-group();
+    gap: 0.5rem;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 0.5rem;
+    padding: 1rem;
+
+    background-color: hsl(var(--accent-clr), 0.1);
+    
+    &__icon {
+        stroke: hsl(var(--accent-clr));
+    }
+
+    &__title {
+        color: hsl(var(--accent-clr));
+        font-weight: var(--fw-bold);
+    }
+
+    &__score {
+        font-weight: var(--fw-bold);
+        color: hsl(var(--hsl-dark-blue), 0.5)
+    }
+
+    &__score span {
+        color: var(--clr-neutral-700);
+    }
+
+
+    /* data attributes for setting accent color may not be needed */
+    &[data-item-type="accent-1"] {
+        --accent-clr: var(--clr-accent-1);
+    }
+
+    &[data-item-type="accent-2"] {
+        --accent-clr: var(--clr-accent-2);
+    }
+
+    &[data-item-type="accent-3"] {
+        --accent-clr: var(--clr-accent-3);
+    }
+
+    &[data-item-type="accent-4"] {
+        --accent-clr: var(--clr-accent-4);
+    }
+}
+
+
+

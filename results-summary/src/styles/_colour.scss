@@ -1,0 +1,34 @@
+:root {
+  --hsl-slate-blue: 252, 100%, 67%;
+  --hsl-violet-blue: 256, 72%, 46%;
+  --hsl-royal-blue: 241, 81%, 54%;
+  --hsl-persian-blue: 241, 72%, 46%;
+
+  --hsl-white: 0, 0%, 100%;
+  --hsl-pale-blue: 221, 100%, 96%;
+  --hsl-lavender: 241, 100%, 89%;
+  --hsl-dark-blue: 224, 30%, 27%;
+
+  --clr-neutral-100: hsl(var(--hsl-white));
+  --clr-neutral-200: hsl(var(--hsl-pale-blue));
+  --clr-neutral-300: hsl(var(--hsl-lavender));
+  --clr-neutral-700: hsl(var(--hsl-dark-blue));
+
+
+  --clr-primary-400: hsl(var(--hsl-slate-blue));
+  --clr-primary-500: hsla(var(--hsl-violet-blue));
+  --clr-secondary-400: hsl(var(--hsl-royal-blue));
+
+  --gradient-primary: linear-gradient(
+      var(--clr-primary-400), 
+      var(--clr-secondary-400));
+
+  --gradient-to-transparent: linear-gradient(
+      var(--clr-primary-500),
+      hsl(var(--hsl-persian-blue), 0));
+
+  --clr-accent-1: 0, 100%, 67%;
+  --clr-accent-2: 39, 100%, 56%;
+  --clr-accent-3: 166, 100%, 37%;
+  --clr-accent-4: 234, 85%, 45%;
+}

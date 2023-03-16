@@ -1,1 +1,9 @@
-<p>summary-item works!</p>
+<div class="summary-item" [attr.data-item-type]="'accent-' + accentIndex">
+  <div class="flex-group">
+    <img class="summary-item__icon" src="{{icon}}"/>
+    <h3 class="summary-item__title">{{ title }}</h3>
+  </div>
+  <p class="summary-item__score-container">
+    <span class="score-container__score">{{ score }}</span> / {{ maxScore }}
+  </p>
+</div>

@@ -1,0 +1,18 @@
+@mixin button-reset {
+    cursor: pointer;
+    border: none;
+    border-radius: 100vw;
+    line-height: 1;
+}
+
+@mixin flex-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+@mixin grid-flow {
+    display: grid;
+    align-content: start;
+
+}

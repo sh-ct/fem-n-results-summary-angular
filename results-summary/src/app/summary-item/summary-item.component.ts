@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-summary-item',
@@ -6,5 +6,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./summary-item.component.scss']
 })
 export class SummaryItemComponent {
+
+  @Input()
+  title: string = '';
+
+  @Input()
+  icon: string = '';
+
+  @Input()
+  score: number;
+
+  @Input()
+  maxScore: number = 100;
+
+  @Input()
+  accentIndex: number = 1;
 
 }

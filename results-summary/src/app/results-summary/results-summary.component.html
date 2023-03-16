@@ -1,1 +1,45 @@
-<p>results-summary works!</p>
+<div class="result-summary">
+
+
+    <div class="results grid-flow"  data-spacing="large">
+
+      <h1 class="section-title">Your Result</h1>
+      <p class="results__score"><span>{{averageScore}}</span>of 100</p>
+
+      <div class="grid-flow">
+        <p class="results__rank">Great</p>
+        <p>You scored higher than 65% of the people who have taken these tests.</p>
+      </div>
+
+
+    </div>
+
+    
+    <div class="summary grid-flow" data-spacing="large">
+
+
+      <h2 class="section-title">Summary</h2>
+
+      <div class="grid-flow">
+
+        <ng-container *ngFor="let item of results; let index = index">
+            <app-summary-item [title]="item.category"
+                            [icon]="item.icon"
+                            [score]="item.score"
+                            [accentIndex]="index + 1"
+            >
+            </app-summary-item>
+        </ng-container>
+
+      </div>
+
+      <button class="button">Continue</button>
+
+
+    </div>
+
+
+  </div>
+
+
+
